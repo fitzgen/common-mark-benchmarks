@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CommonMark (Markdown) Benchmarks</title>
+    </head>
+    <body>
+        <h1>CommonMark (Markdown) Benchmarks</h1>
+
+        <p>
+            This benchmark suite compares the performance of markdown-to-HTML
+            conversion of the following libraries:
+        </p>
+        <ul>
+            <li><a href="https://github.com/commonmark/commonmark.js"><code>commonmark.js</code></a></li>
+            <li><a href="https://github.com/markdown-it/markdown-it"><code>markdown-it</code></a></li>
+            <li><a href="https://marked.js.org"><code>marked</code></a></li>
+            <li><a href="https://github.com/tschneidereit/pulldown-cmark-wasm"><code>pulldown-cmark-wasm</code></a></li>
+            <li><a href="https://github.com/showdownjs/showdown"><code>showdown</code></a></li>
+        </ul>
+
+        <p>
+            <a href="https://github.com/fitzgen/common-mark-benchmarks">Learn more about these benchmarks here!</a>
+        </p>
+
+        <p>
+            <button id="run-benchmarks"><h2>Run the benchmarks!</h2></button>
+        </p>
+
+        <div id="errors-container" hidden>
+            <h2>Errors</h2>
+            <pre id="errors"></pre>
+        </div>
+
+        <div id="csv-container" hidden>
+            <h2>CSV Data</h2>
+            <button id="copy" disabled>Copy 📋</button>
+            <textarea id="csv" disabled></textarea>
+        </div>
+
+        <div id="results-container" hidden>
+            <h2>Results</h2>
+            <ul id="results"></ul>
+        </div>
+
+        <!-- Can't get benchmark.js and lodash to play nice with Webpack, so load them manually.  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/benchmark/2.1.4/benchmark.min.js"></script>
+
+        <script src="./bundle.js"></script>
+    </body>
+</html>

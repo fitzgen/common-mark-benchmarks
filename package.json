@@ -1,0 +1,29 @@
+{
+  "name": "common-mark-benchmarks",
+  "version": "1.0.0",
+  "description": "Benchmarks for various common mark (markdown) implementations.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js && webpack",
+    "bench": "node index.js",
+    "serve": "webpack-dev-server --open"
+  },
+  "author": "Nick Fitzgerald <fitzgen@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "clean-webpack-plugin": "^0.1.19",
+    "commonmark": "^0.28.1",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.11",
+    "markdown-it": "file:markdown-it",
+    "marked": "^0.5.1",
+    "pulldown-cmark-wasm": "^0.1.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "devDependencies": {
+    "showdown": "^1.8.6"
+  }
+}

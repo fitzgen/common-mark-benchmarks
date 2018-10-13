@@ -1,0 +1,9 @@
+[submodule "markdown-it"]
+	path = markdown-it
+	url = https://github.com/markdown-it/markdown-it.git
+[submodule "CommonMark"]
+	path = CommonMark
+	url = https://github.com/commonmark/CommonMark.git
+[submodule "pulldown-cmark-wasm"]
+	path = pulldown-cmark-wasm
+	url = https://github.com/tschneidereit/pulldown-cmark-wasm.git
