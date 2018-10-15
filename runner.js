@@ -37,8 +37,7 @@ function runSuite(csvFile, suite) {
   });
 
   suite.on("error", function (error) {
-    console.error("Error while running benchmarks!");
-    console.error(error);
+    console.error(`${event.target.name} threw an error or produced incorrect output on the ${event.currentTarget.name} benchmark!`);
   });
 
   suite.run();

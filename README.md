@@ -11,7 +11,13 @@ the following libraries:
 
 ## Running the Benchmarks
 
-First, ensure that the dependencies are installed:
+First, make sure that the submodules are initialized:
+
+```
+git submodule update --init
+```
+
+Next, ensure that the dependencies are installed:
 
 ```
 npm install
@@ -23,8 +29,8 @@ Build the benchmarks:
 npm run build
 ```
 
-You're ready to run the benchmarks! They can be run in either a Web browser or
-in Node.js.
+Now you're ready to run the benchmarks! They can be run in either a Web browser
+or in Node.js.
 
 ### In a Web Browser
 
@@ -69,12 +75,12 @@ TODO
 
 ### Additional Inputs
 
-* [ ] **HTML entities.** Common mark requires normalizing HTML entities into
+* [X] **HTML entities.** Common mark requires normalizing HTML entities into
       their unicode represenation. This behavior is not particularly
       well-exercised by existing benchmark inputs, so we add a synthetic
       benchmark to stress it.
 
-* [ ] **`README.md` files from popular JavaScript projects.** We visited each of
+* [X] **`README.md` files from popular JavaScript projects.** We visited each of
       the repositories listed in [GitHub's fontend JavaScript frameworks section
       of their explore
       page](https://github.com/collections/front-end-javascript-frameworks) and

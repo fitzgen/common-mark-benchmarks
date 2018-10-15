@@ -94,15 +94,11 @@ async function runSuite(suite) {
     suite.on("complete", resolve);
   });
 
-  suite.on("error", () => {
+  suite.on("error", event => {
     show(errorsContainer);
     errors.textContent += `
-Error while running benchmarks!
-${error}
-  `;
 
-    console.error("Error while running benchmarks!");
-    console.error(error);
+${event.target.name} threw an error or produced incorrect output on the ${event.currentTarget.name} benchmark!`;
   });
 
   suite.run({ "async": true });
