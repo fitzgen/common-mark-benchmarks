@@ -1,1 +1,0 @@
-<html><body>You are being <a href="https://raw.githubusercontent.com/Polymer/polymer/master/README.md">redirected</a>.</body></html>
