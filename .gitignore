@@ -2,3 +2,4 @@ node_modules
 benchmarks.js
 dist
 bench-*.csv
+Rplots.pdf
